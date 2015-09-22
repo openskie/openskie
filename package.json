@@ -32,6 +32,7 @@
     "is-root": "^1.0.0",
     "main-loop": "^3.2.0",
     "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1",
     "mysql": "^2.9.0",
     "routes": "^2.1.0",
     "sqlite3": "^3.1.0",

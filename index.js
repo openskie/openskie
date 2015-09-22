@@ -8,6 +8,7 @@ var fs = require('fs')
 var hyperstream = require('hyperstream')
 var xtend = require('xtend')
 var createElement = require('virtual-dom/create-element')
+var db = require('./lib/db.js')
 
 inherits(Server, EventEmitter)
 module.exports = Server
@@ -30,6 +31,10 @@ Server.prototype.handle = function (req, res) {
 
 Server.prototype.createStream = function () {
   // websocket feed goes here
+}
+
+Server.prototype.setup = function (cb) {
+  db.setup(cb)
 }
 
 function read (file) {
