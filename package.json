@@ -1,0 +1,25 @@
+{
+  "name": "openskie",
+  "version": "1.0.0",
+  "description": "continuing education tracker for teachers and childcare workers",
+  "bin": {
+    "openskie": "bin/cmd.js"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/openskie/openskie.git"
+  },
+  "keywords": [
+    "continuing",
+    "education",
+    "app",
+    "teachers"
+  ],
+  "bugs": {
+    "url": "https://github.com/openskie/openskie/issues"
+  },
+  "homepage": "https://github.com/openskie/openskie#readme"
+}
