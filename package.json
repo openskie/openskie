@@ -6,8 +6,24 @@
   "bin": {
     "openskie": "bin/cmd.js"
   },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "loose": [
+            "es6.modules"
+          ],
+          "jsxPragma": "h",
+          "plugins": [
+            "babel-plugin-jsx-factory"
+          ]
+        }
+      ]
+    ]
+  },
   "scripts": {
-    "start": "bin/cmd.js",
+    "start": "babel-node bin/cmd.js",
     "test": "tape test/*.js"
   },
   "repository": {
@@ -25,6 +41,8 @@
   },
   "homepage": "https://github.com/openskie/openskie#readme",
   "dependencies": {
+    "babel": "^5.8.23",
+    "babel-plugin-jsx-factory": "^1.0.1",
     "body": "^5.1.0",
     "ecstatic": "^1.0.0",
     "hyperstream": "^1.2.2",

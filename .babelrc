@@ -1,0 +1,9 @@
+{
+  "loose": [
+    "es6.modules"
+  ],
+  "jsxPragma": "h",
+  "plugins": [
+    "babel-plugin-jsx-factory"
+  ]
+}
